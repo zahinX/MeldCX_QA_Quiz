@@ -22,7 +22,7 @@ const AuthContext = React.createContext<AuthAPI>({
 const AuthProvider: React.FC = ({children}) => {
 
     const [user, setUser] = useState();
-
+    
     const login = (username: string, password: string) => {
         console.warn({username, password})
         if(accounts[username].password === password) {
